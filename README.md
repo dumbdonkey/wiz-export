@@ -6,26 +6,29 @@
     
     加密文件解压
     
-- usage
-    
-    1. 自行编译
-    
-    2. 下载编译好的jar包
+- 使用
     
     ```
     java -jar wiz-export-1.0-SNAPSHOT.jar -i 索引文件位置 -d 数据文件位置 -t html存储目录  
     
     ```
-    
+  
+ps:
 
-## 为知笔记索引位置的确定
+如果不熟悉java的话可以直接用下面的命令下载编译好的jar包
+    
+wget "https://raw.github.com/zuochangan/wiz-export/master/bin/wiz-export-1.0-SNAPSHOT.jar"
+           
+
+### 为知笔记索引位置的确定
 
 默认在家目录下的.wiznote/登录用户/data下
 
 
-## 为知笔记数据文件位置的确定
+### 为知笔记数据文件位置的确定
 
 默认在家目录下的.wiznote/登录用户/data/notes下
 
 
-如果不在的话，可以通过lsof看下Wiznote应用当前打开的文件句柄找找看.
+**如果不在的话，可以通过lsof看下Wiznote应用当前打开的文件句柄找找看.**
+
